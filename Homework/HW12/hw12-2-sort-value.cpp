@@ -72,9 +72,9 @@ int main() {
     struct Student students[4];
 
     for (int i = 0; i < 4; i++) {
-        printf("Student %c\nName : ", 'A' + i);
+        printf("Student %c\nName :\n", 'A' + i);
         scanf(" %[^\n]", students[i].Name);
-        printf("Score : ");
+        printf("Score :\n");
         scanf("%f", &students[i].Score);
     }
 
