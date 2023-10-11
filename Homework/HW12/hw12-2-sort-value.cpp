@@ -73,7 +73,7 @@ int main() {
 
     for (int i = 0; i < 4; i++) {
         printf("Student %c\nName : ", 'A' + i);
-        scanf("%s", students[i].Name);
+        scanf(" %[^\n]", students[i].Name);
         printf("Score : ");
         scanf("%f", &students[i].Score);
     }
